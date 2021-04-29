@@ -62,7 +62,7 @@ def check_dtype(fname):
                 
     return file_
 
-check_dtype("8187")                
+check_dtype("8191")                
 #############################################################################
 
 
@@ -123,10 +123,10 @@ def merge(fname):
     return merge_data
 ###################################################################################################
 # Run the function and save the output file as .txt or .csv in the right folder
-outdir = "D:/Ifeanyi/for_preprocessing/8187_merge.csv"
-out_txt = "D:/Ifeanyi/for_preprocessing/8187_merge.txt"
+outdir = "D:/Ifeanyi/for_preprocessing/8191_merge.csv"
+out_txt = "D:/Ifeanyi/for_preprocessing/8191_merge.txt"
 
-df = merge("8187")
+df = merge("8191")
 df.to_csv(outdir, header = False, index = False)
 df.to_csv(out_txt, header = False, index = False, sep = " ")
 
